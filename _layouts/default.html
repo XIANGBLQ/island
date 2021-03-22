@@ -10,9 +10,26 @@
   <body>
     <div class="Margins">
       <p class="LatexTitle">{{ page.title }}</p>
+
+
+
       <p class="LatexName">By</p>
       {% if page.creator %} <p class="LatexName">{{ page.creator }}</p> {% endif %}
-      {% if page.date %} <p class="LatexDate">{{ page.date }}</p> {% endif %}
+      
+      
+      
+      {% if page.abstract %}<div class="AbstractMargins"></div>
+      <p class="LatexAbstract">A Dissertation Submitted to</p>
+      <p class="LatexAbstract">Chengdu Technological University</p>
+      <p class="LatexAbstract">In partial fulfillment of the requirement</p>
+      <p class="LatexAbstract">For the degree of</p>
+      <p class="LatexAbstract">Bachelor of Environmental Science and Engineering</p>
+    </div>{% endif %}
+
+    <p class="LatexName">Environmental Science and Engineering</p>
+    {% if page.xueyuan %} <p class="LatexName">{{ <page class="xueyuan"></page> }}</p> {% endif %}
+    {% if page.date %} <p class="LatexDate">{{ page.date }}</p> {% endif %}
+      
       
       {% if page.abstract %}<div class="AbstractMargins">
         <p class="LatexAbstract">Abstract</p>
